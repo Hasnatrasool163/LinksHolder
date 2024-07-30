@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Links Holder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="download.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Links Holder</h1>
+        <form id="link-form">
+            <input type="text" id="link-url" placeholder="Paste your link here" required>
+            <input type="text" id="link-title" placeholder="Title" required>
+            <select id="link-category" required>
+                <option value="">Select Category</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="education">Education</option>
+                <option value="other">Other</option>
+            </select>
+            <select id="link-rank" required>
+                <option value="normal">Normal</option>
+                <option value="important">Important</option>
+                <option value="very-important">Very Important</option>
+                <option value="custom">Custom</option>
+            </select>
+            <input type="text" id="custom-rank" placeholder="Custom Rank" style="display: none;">
+            <button type="submit">Add Link</button>
+        </form>
+        <div id="links-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

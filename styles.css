@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.container {
+    width: 99%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px; 
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#links-container {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding-right: 10px; 
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.link-card img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.link-details {
+    flex-grow: 1;
+}
+
+.link-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.link-actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.link-actions button:first-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.link-actions button:first-child:hover {
+    background-color: #218838;
+}
+
+.link-actions button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.link-actions button:last-child:hover {
+    background-color: #c82333;
+}
+
+.rank-normal {
+    border-left: 5px solid #007BFF;
+}
+
+.rank-important {
+    border-left: 5px solid #FFC107;
+}
+
+.rank-very-important {
+    border-left: 5px solid #DC3545;
+}
+
+.rank-custom {
+    border-left: 5px solid #6f42c1;
+}
